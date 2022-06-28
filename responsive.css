@@ -1,0 +1,569 @@
+/*=================================
+responsive navbar for mobile device
+==================================== */
+
+
+@media screen and (max-width: 947px){
+  
+    nav{
+        padding: 10px 50px;
+    }
+    
+      nav .menu{
+      position: fixed;
+      left:-100%;
+      top: 0;
+      height: 100vh;
+      width: 40%;
+      max-width: 40%;
+      background:#111;
+      text-align: center;
+      padding-top: 80px;
+      transition: all 0.3s ease;
+      overflow: hidden;
+      z-index: 999;
+    
+    }
+    nav .menu li{
+        display: block;
+      }
+      nav .menu li a{
+        color: #FFFFFF;
+      }
+    .menu.active{
+      left: 0;
+    }
+    
+    
+  
+    nav .menu li a{
+        display: inline-block;
+        margin: 5px 0;
+        font-size: 16px;
+    }
+
+    .drowpdown-item{
+       position: absolute;
+       max-width: 100%;
+       width: 100%;
+       margin-left: 0;
+       margin-top: 0;
+       left: 0;
+       
+       padding: 10px;
+       font-size: 12px;
+    }
+    .dropdown .drowpdown-item li a{
+        font-size: 15px;
+        color: black;
+        text-align: left;
+        display: block;
+        width: 200px;
+    }
+    .menu .drowpdown-item li {
+        display: block;
+    
+    }
+    .dropdown .drowpdown-item li a:hover{
+        color: #B59DFF;
+    }
+    .side-btn {
+        display: block;
+    }
+  
+     
+  }
+
+
+  /*=================================
+navbar styling end here
+==================================== */
+
+
+
+ /*=================================
+home section styling start here
+==================================== */
+
+@media screen and (max-width:1000px) {
+    .home-section{
+        margin-top: 200px;
+    }
+}
+@media screen and (max-width:750px) {
+    .home-section .home-info{
+        flex-basis: 100%;
+        text-align: left;
+        margin-top: -100px;
+       
+    }
+    .home-section .home-img{
+        flex-basis: 100%;
+       
+    }
+}
+@media screen and (max-width:500px) {
+    .home-section {
+        padding: 10px 30px;
+    }
+    .home-section .home-info h1{
+        font-size: 35px;
+    }
+}
+
+ /*=================================
+home section styling end here
+==================================== */
+
+
+
+
+
+
+
+
+
+ /*=================================
+about section styling start here
+==================================== */
+
+@media screen and (max-width:1000px) {
+    .about-section{
+      margin-top: 200px;
+    }
+    
+}
+
+@media screen and (max-width:750px) {
+    .about-img{
+        flex-basis: 100%;
+        text-align: center;
+        margin-left: 30px;
+    }
+    .about-text{
+        flex-basis: 100%;
+      
+    }
+}
+@media screen and (max-width:500px){
+    .about-section{
+        padding: 10px 40px;
+    }
+    .about-text h1{
+        font-size: 25px;
+       
+    }
+} 
+
+ /*=================================
+about section styling end here
+==================================== */
+
+
+
+
+
+
+
+
+ /*=================================
+service section styling start here
+==================================== */
+
+@media screen and (max-width:950px){
+    .service-section{
+        margin-top: 200px;
+    
+    }
+    .service-head{
+        width: 100%;
+      
+    }
+    .service-item{
+        flex-basis: 40%;
+    }
+}
+
+@media screen and (max-width:650px){
+    .service-item{
+        flex-basis: 100%;
+    }
+    .service-section{
+        padding: 20px 40px;
+      
+    }
+    .service-head h1{
+        font-size: 30px;
+    }
+    .service-head{
+        width: 100%;
+        padding: 10px 10px;
+      
+    }
+}
+@media screen and (max-width:500px){
+    .service-head{
+        width: 100%;
+      
+    
+    }
+}
+
+ /*=================================
+service section styling end here
+==================================== */
+
+
+
+
+
+
+ /*=================================
+project section styling start here
+==================================== */
+
+@media screen and (max-width:950px) {
+    .project-section .project{
+        flex-basis: 45%;
+     }
+     
+}
+@media screen and (max-width:600px) {
+    .project-section{
+        height: 600px;
+        padding: 20px 40px;
+       
+     }
+    .project-section .project{
+        flex-basis: 90%;
+        margin: 20px 0px;
+     }
+     
+}
+
+
+ /*=================================
+project section styling end here
+==================================== */
+
+
+
+
+
+ /*=================================
+portfolio section styling start here
+==================================== */
+
+@media screen and (max-width:1300px) {
+    .protfolio .protfolio-item .overlay{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .protfolio-section .protfolio-head{
+        width: 100%;
+        text-align: center;
+        padding: 40px 10px;
+    }
+    .protfolio-section .protfolio-head h1{
+        font-size: 27px;
+      
+    }
+    .protfolio-section{
+        padding: 40px 50px;
+        margin-bottom: 100px;
+    }
+    
+}
+
+
+ /*=================================
+portfolio section styling end here
+==================================== */
+
+
+
+
+
+
+
+
+
+
+ /*=================================
+client section styling start here
+==================================== */
+
+@media screen and (max-width:1250px) {
+   #client{
+        margin-top: 350px;
+        
+    }
+}
+@media screen and (max-width:880px) {
+    #client{
+        margin-top: 220%;
+        
+    }
+    .client-section{
+      width: 100%;
+
+        
+    }
+    .client-section .swiper-wrapper .client{
+        
+        flex-basis: 90%;
+        height: 200px;
+        margin: 10px auto;
+        background-color: #FFFFFF;
+        overflow:hidden;
+        position: relative;
+        padding: 15px;
+       
+    }
+     
+ }
+ @media screen and (max-width:750px) {
+    #client{
+        margin-top: 270%;
+        
+    }
+ }
+ @media screen and (max-width:650px){
+    #client{
+        margin-top: 305%;
+        
+    }
+    .client-section .swiper-wrapper .client{
+        height: 250px;
+      
+    }
+ }
+ @media screen and (max-width:550px){
+    #client{
+        margin-top: 350%;
+        
+    }
+    .client-section{
+        padding: 20px 20px;
+        
+    }
+ }
+ @media screen and (max-width:500px){
+    .client-section{
+        padding: 20px 20px;
+        
+    }
+    #client{
+        margin-top: 430%;
+        
+    }
+ }
+ @media screen and (max-width:400px){
+    #client{
+        margin-top: 520%;
+        
+    } 
+    .client-section .swiper-wrapper .client{
+        height: 300px;
+      
+    }
+ }
+
+
+ 
+ /*=================================
+client section styling end here
+==================================== */
+
+
+
+
+
+
+
+
+ /*=================================
+pricing section styling start here
+==================================== */
+
+ @media screen and (max-width:900px) {
+    .pricing-item{
+        flex-basis: 40%;
+        height: 600px;
+     
+     }
+     .pricing-area{
+        padding: 20px 5px;
+        
+    }
+ }
+ @media screen and (max-width:600px){
+    .pricing-item{
+        flex-basis: 90%;
+        height: 600px;
+     
+       
+     }
+     .pricing-head h1{
+        font-size: 28px;
+    }
+ }
+ @media screen and (max-width:500px){
+    .pricing-area{
+        padding: 20px 5px;
+        
+    }
+ }
+
+
+ 
+ /*=================================
+pricing section styling end here
+==================================== */
+
+
+
+
+
+
+
+
+
+
+ /*=================================
+blog section styling start here
+==================================== */
+
+ @media screen and (max-width:1140px) {
+     #blog{
+         margin-top: 900px;
+     }
+ }
+ @media screen and (max-width:950px){
+    .post-body .post-items{
+        width: 45%;
+      
+      
+    }
+ }
+ @media screen and (max-width:750px){
+    .post-body .post-items{
+        width: 80%;
+      
+      
+    }
+ }
+ @media screen and (max-width:600px){
+    #blog{
+        margin-top: 2400px;
+    }
+    .post-section{
+        padding: 40px 30px;
+    }
+    .post-section .post-head h1{
+        font-size: 30px;
+    }
+ }
+
+ @media screen and (max-width:500px){
+    .post-section{
+        padding: 40px 10px;
+    }
+    .post-body .post-items{
+        width: 90%;
+      
+      
+    }
+ }
+
+
+ /*=================================
+blog section styling end here
+==================================== */
+
+
+
+
+
+
+
+ /*=================================
+brand section styling start here
+==================================== */
+
+ @media screen and (max-width:950px) {
+     #brand{
+         margin-top: 530px;
+     }
+ }
+ @media screen and (max-width:750px) {
+    #brand{
+        margin-top: 1030px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    #brand{
+        margin-top: 1100px;
+    }
+    .brand-section{
+        width: 100%;
+        height: 350px;
+        padding: 10px 40px;
+    }
+}
+
+
+ /*=================================
+brand section styling end here
+==================================== */
+
+
+
+
+
+
+
+ /*=================================
+footer section styling start here
+==================================== */
+@media screen and (max-width:1000px) {
+    .footer-section{
+        height: auto;
+       
+    }
+}
+
+@media screen and (max-width:900px) {
+    .footer-section .about-me{
+        width: 45%;
+    }
+    .footer-section .newsletter{
+        width: 45%;
+    }
+    .footer-section  .follow-me{
+        width: 90%;
+       
+    }
+}
+
+
+
+@media screen and (max-width:600px) {
+    .footer-section .about-me{
+        width: 90%;
+    }
+    .footer-section .newsletter{
+        width: 90%;
+    }
+    .footer-section{
+        padding: 100px 20px;
+       
+    }
+}
+
+ /*=================================
+footer section styling end here
+==================================== */

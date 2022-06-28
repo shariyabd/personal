@@ -1,0 +1,996 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F9F9FF;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ================================================
+navbar section styling start here
+=================================================== */
+
+nav{
+    max-width: 100%;
+    width: 100%;
+    height: 70px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+.show{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+nav .logo{
+    padding-left: 20px;
+}
+.logo img:hover{
+    cursor: pointer;
+}
+
+nav .menu{
+    display: inline-block;
+
+}
+nav .menu li{
+    display: inline-block;
+    list-style: none;
+}
+nav .menu li a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    display: block;
+    font-weight: 500;
+    padding: 10px 10px;
+    text-transform: uppercase;
+}
+.menu .active-nav{
+    color: #B59DFF;
+}
+.menu li a:hover{
+    color: #B59DFF;
+    transition: 0.6s all ease;
+}
+
+.drowpdown-item{
+    display: block;
+    position: absolute;
+    background-color: #FFFFFF;
+    box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.191);
+    margin-left: -15px;
+    margin-top: 10px;
+    width: 200px;
+    padding: 7px 25px;
+    display: none;
+    transition: all 0.8s ease;
+   
+}
+.menu .drowpdown-item li {
+    width: 100px;
+    display: block;
+}
+.menu li:hover .drowpdown-item{
+    display: block;
+}
+.side-btn {
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    display: none;
+    cursor: pointer;
+}
+.side-btn i.active:before{
+    content: "\f00d";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*=================================
+responsive navbar for mobile device
+==================================== */
+
+
+@media screen and (max-width: 947px){
+  
+    nav{
+        padding: 10px 50px;
+    }
+    
+      nav .menu{
+      position: fixed;
+      left:-100%;
+      top: 0;
+      height: 100vh;
+      width: 40%;
+      max-width: 40%;
+      background:#111;
+      text-align: center;
+      padding-top: 80px;
+      transition: all 0.3s ease;
+      overflow: hidden;
+      z-index: 999;
+    
+    }
+    nav .menu li{
+        display: block;
+      }
+      nav .menu li a{
+        color: #FFFFFF;
+      }
+    .menu.active{
+      left: 0;
+    }
+    
+    
+  
+    nav .menu li a{
+        display: inline-block;
+        margin: 5px 0;
+        font-size: 18px;
+    }
+
+    .drowpdown-item{
+       position: absolute;
+       max-width: 100%;
+       width: 100%;
+       margin-left: 0;
+       margin-top: 0;
+       left: 0;
+       
+       padding: 10px;
+       font-size: 12px;
+    }
+    .dropdown .drowpdown-item li a{
+        font-size: 15px;
+        color: black;
+        text-align: left;
+        display: block;
+        width: 200px;
+    }
+    .menu .drowpdown-item li {
+        display: block;
+    
+    }
+    .dropdown .drowpdown-item li a:hover{
+        color: #B59DFF;
+    }
+    .side-btn {
+        display: block;
+    }
+  
+     
+  }
+
+
+  /*=================================
+navbar styling end here
+==================================== */
+
+
+
+
+
+
+/* =============================
+home section styling start here 
+=================================*/
+
+.home-section{
+    max-width: 100%;
+    height: 750px;
+    padding: 10px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9F9FF;
+   
+}
+.home-section .home-info{
+    flex-basis: 45%;
+    text-align: left;
+    margin-top: -100px;
+   
+}
+.home-section .home-info .home-text{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.home-section .home-info .home-des{
+    text-align: justify;
+    opacity: 0.4;
+    margin-bottom: 20px;
+}
+.home-section .home-info .home-btn{
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, #8194FF , #8194ffad);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+}
+.home-btn:hover{
+    box-shadow: 0px 8px 20px #8194ffae;
+    transition: 0.4s all;
+}
+
+.home-section .home-info h1{
+    font-size: 55px;
+    opacity: 0.9;
+    font-weight: bold;
+    padding: 15px 0px;
+}
+.home-section .home-img{
+    flex-basis: 50%;
+    text-align: center;
+   
+}
+
+/* =============================
+home section styling end here 
+=================================*/
+
+
+
+
+
+
+
+/* =============================
+about section styling start here 
+=================================*/
+.about-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 100%;
+    height: 700px;
+    background-color:  #FFFFFF;
+    padding: 10px 80px;
+}
+
+.about-img{
+    flex-basis: 60%;
+    text-align: center;
+    margin-left: -100px;
+}
+.about-img img{
+    width: 550px;
+}
+.about-text{
+    flex-basis: 40%;
+    text-align: left;
+}
+.about-text .about-pera{
+    text-transform: uppercase;
+}
+.about-text h1{
+    font-size: 35px;
+    font-weight: 600;
+    opacity: 0.9;
+    text-transform: uppercase;
+    padding: 30px 0px;
+}
+.about-text .about-des{
+    text-align: justify;
+    padding-bottom: 20px;
+    opacity: 0.6;
+}
+.about-text .about-btn{
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, #8194FF , #8194ffad);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+}
+.about-btn:hover{
+    box-shadow: 0px 8px 20px #8194ffae;
+    transition: 0.4s all;
+}
+
+/* =============================
+about section styling end here 
+=================================*/
+
+
+
+
+
+
+
+
+
+
+
+/* =============================
+service section styling start here 
+=================================*/
+
+.service-section{
+    max-width: 100%;
+    padding: 20px 80px;
+    background-color:  #FFFFFF;
+    margin: 0 auto;
+
+}
+
+.service-head{
+    text-align: center;
+    padding: 20px 20px;
+    width: 800px;
+    margin: 10px auto;
+}
+.service-head h1{
+    padding: 10px 0px;
+    font-size: 35px;
+}
+.service-head p{
+    letter-spacing: 1px;
+    opacity: 0.6;
+}
+
+.service-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    
+}
+.service-item{
+    flex-basis: 30%;
+    text-align: center;
+    margin: 15px;
+}
+.service-item h3{
+    padding: 15px 0px;
+    font-weight: 600;
+}
+.service-item p{
+    padding: 15px 0px;
+    opacity: 0.6;
+}
+
+.service-item span i{
+    font-size: 30px;
+    opacity: 0.8;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.hover:hover{
+    color: #8194FF;
+    transition: 0.6s all;
+}
+
+/* =============================
+service section styling end here 
+=================================*/
+
+
+
+
+
+/* =============================
+project section styling start here 
+=================================*/
+
+.project-section{
+    max-width: 100%;
+    height: 300px;
+    background-color: #8194FF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 60px;
+    align-items: center;
+ }
+ 
+.project h1{
+    font-size: 35px;
+    color: white;
+    text-align: center;
+}
+.project h4{
+    font-size: 15px;
+    font-weight: 450;
+    text-align: center;
+    color: white;
+}
+
+/* =============================
+project section styling end here 
+=================================*/
+
+
+
+
+
+/* =============================
+portfolio section styling start here 
+=================================*/
+.protfolio-section{
+    width: 100%;
+    height: 1300px;
+    padding: 40px 80px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.protfolio-section .protfolio-head{
+    text-align: center;
+    padding: 40px 20px;
+}
+.protfolio-section .protfolio-head h1{
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+.protfolio-section .protfolio-head p{
+   opacity: 0.7;
+  letter-spacing: 1px;
+}
+
+.protfolio-menu{
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0px;
+   
+}
+.protfolio-menu .active{
+    color: #8194FF;
+}
+.protfolio-menu li:hover{
+    transition: 0.6s all;
+    border-bottom: 1px solid #8194FF;
+}
+.protfolio-menu li{
+    display: inline-block;
+    list-style: none;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+
+
+.protfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.protfolio .protfolio-item{
+    margin: 10px;
+    position: relative;
+    flex-basis: 30%;
+  
+}
+
+
+.protfolio .protfolio-item .overlay img{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+  
+
+  
+   
+}
+.protfolio .protfolio-item .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:96%;
+    height: 80%;
+    background-color: #8194ff9b;
+    display: none;
+    border-radius: 8px;
+}
+.protfolio .protfolio-item:hover .overlay{
+    display: block;
+    transition: 0.8s all ease;
+   
+}
+.protfolio .protfolio-item .content-p{
+    text-align: center;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+
+/* =============================
+portfolio section styling end here 
+=================================*/
+
+
+
+
+
+/* =============================
+client section styling start here 
+=================================*/
+.client-section{
+    width: 90%;
+    height: auto;
+    padding: 20px 40px;
+    margin-top: 50px;
+    margin: auto;
+    background-color: #F9F9FF;
+    
+    
+}
+.client-section .swiper-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.client-section .swiper-wrapper .client{
+    flex-basis: 45%;
+    height: 250px;
+    margin: 10px auto;
+    background-color: #FFFFFF;
+    padding: 15px;
+    position: relative;
+   
+}
+.client:hover .client-des h3{
+    color: #8194FF;
+    transition: .6s ease;
+}
+.swiper-wrapper{
+    padding-top: 50px;
+  
+}
+
+.client img{
+    width: 80px;
+    padding: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.client .client-des{
+    padding: 5px 20px;
+    position: absolute;
+    top: 30px;
+    left: 85px;
+}
+.client .client-des p{
+    opacity: 0.7;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-align: justify;
+} 
+.client .client-des h3{
+    font-weight: 500;
+    padding: 7px 0px 3px 0px;
+}
+.client-head{
+    text-align: center;
+    padding: 30px 60px; 
+    margin-top: 60px;
+  
+}
+ .client-head h1{
+    font-size: 35px;
+    font-weight: bold;
+    padding: 20px 10px;
+}
+ .client-head p{
+    opacity: 0.7;
+    letter-spacing: 1px;
+}
+
+
+/* =============================
+client section styling end here 
+=================================*/
+
+ 
+
+
+ /* =============================
+pricing section styling start here 
+=================================*/
+
+ .pricing-area{
+     width: 100%;
+     height: 950px;
+     margin: 30px auto;
+    background-color: #FFFFFF;
+     padding: 20px 30px;
+     
+ }
+ .pricing-head{
+     text-align: center;
+     padding: 20px 40px;
+     margin: 25px auto;
+ }
+ .pricing-head h1{
+     font-size: 35px;
+ }
+ .pricing-head p{
+     font-size: 15px;
+     opacity: 0.8;
+     padding: 5px;
+ }
+ .princing-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    padding: 20px 40px;
+    background-color: #F9F9FF;
+ }
+ .pricing-item{
+    background-color: #F9F9FF;
+    flex-basis: 23%;
+    height: 600px;
+    text-align: center;
+    position: relative;
+    margin: 80px 10px;
+ 
+ }
+ .princing-card  .full-cir{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 20px 10px;
+ }
+ .princing-card .pricing-item .full-cir .out-cir{
+     width: 150px;
+     height: 150px;
+     background-color:#8194ff47 ;
+     border-radius: 50%;
+     position: relative;
+ }
+ .princing-card .pricing-item .full-cir .inner-cir{
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+     background-color: #F9F9FF;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+ }
+
+ .princing-card .pricing-item .inner-cir span{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     font-size: 30px;
+  
+ }
+
+ .princing-card .pricing-item .pricing-des{
+     padding: 10px 5px 10px 5px;
+ }
+ .princing-card .pricing-item .pricing-des p{
+     opacity: 0.7;
+     margin-bottom: 20px;
+     font-size: 18px;
+ }
+ .princing-card .pricing-item p{
+     padding: 10px 0px;
+     opacity: 0.7;
+     font-size: 15px;
+     font-weight: 200;
+ }
+ .princing-card .pricing-item hr{
+    
+     opacity: 0.8;
+ }
+ .princing-card .pricing-item h1{
+     margin-top: 20px;
+     padding: 10px;
+     font-size: 40px;
+     position: relative;
+ }
+ .princing-card .pricing-item button{
+     position: absolute;
+     top: 490px;
+     left: 20px;
+     outline: none;
+     border: none;
+     margin: auto;
+     width: 85%;
+     padding: 15px 20px;
+     background-color: #FFFFFF;
+     font-size: 20px;
+     text-transform: uppercase;
+     color: black;
+     opacity: 0;
+     text-align: center;
+    
+ }
+ .princing-card .pricing-item:hover.pricing-item span{
+     color: black !important;
+ }
+ .princing-card .pricing-item:hover{
+     background-color: #8194FF;
+     color: #FFFFFF;
+     transform: scale(1.1);
+     transition: .6s all ease;
+     cursor: pointer;
+ }
+ .princing-card .pricing-item:hover .price{
+     display: none !important;
+ }
+ .princing-card .pricing-item:hover button{
+     opacity: 1;
+     transition: .6s all ease;
+ }
+ .princing-card .pricing-item:hover .princing-card  .pricing-item h1{
+     opacity: 0;
+     visibility: hidden;
+ }
+
+
+ /* =============================
+pricing section styling end here 
+=================================*/
+
+
+
+/* =============================
+post section styling start here 
+=================================*/
+
+ .post-section{
+     width: 90%;
+     height: 800px;
+     padding: 40px 50px;
+     margin: 30px auto;
+     background-color: #F9F9FF;
+ }
+ .post-section .post-head{
+     text-align: center;
+     padding-top: 50px;
+     max-width: 80%;
+     margin: auto;
+
+ }
+ .post-section .post-head h1{
+     font-size: 35px;
+     padding: 20px 10px;
+ }
+ .post-section .post-head p{
+     opacity: 0.8;
+     letter-spacing: 1px;
+     font-size: 15px;
+ }
+.post-body{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ .post-body .post-items{
+     width: 32%;
+     height: 450px;
+     position: relative;
+     margin: 5px;
+ }
+ .post-body .post-items img{
+     text-align: center;
+   
+ }
+ .post-body .post-items .top-img{
+     height: 200px;
+     overflow: hidden;
+ }
+
+ .post-body .post-items hr{
+     opacity: 0.7;
+   
+ }
+ .post-body .post-items .post-row{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ 
+ .post-body .post-items .post-row .social-media{
+     opacity: 0.7;
+     padding: 10px 0px;
+ }
+ .post-body .post-items .post-row .social-media span{
+     padding: 10px 5px;
+ }
+ 
+ .post-body .post-items .post-row .user-name {
+  
+    opacity: 0.7;
+ }
+
+ .post-body .post-items .post-text h4{
+     opacity: 0.8;
+     font-size: 17px;
+     margin: 25px 0px 10px 0px;
+     text-align: left;
+ }
+ .post-body .post-items .post-text {
+     padding: 5px 5px;
+ }
+ .post-body .post-items .post-text p{
+     opacity: 0.7;
+     font-size: 15px;
+     text-align: left;
+ }
+ .post-body .post-items img:hover{
+    transform: scale(1.1);
+    transition: .7s all ease;
+    cursor: pointer;
+}
+.post-body .post-items:hover .post-text h4{
+    color: #8194FF;
+    transition: .7s all ease;
+}
+
+
+/* =============================
+post section styling end here 
+=================================*/
+
+
+
+
+
+/* =============================
+brand section styling start here 
+=================================*/
+
+.brand-section{
+    background-color: #8194FF;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 70px;
+}
+.brand-section img{
+    margin: 5px;
+    opacity: 0.7;
+}
+.brand-section img:hover{
+    opacity: 1;
+    transition: .6s ease all;
+    cursor: pointer;
+}
+
+
+/* =============================
+brand section styling end here 
+=================================*/
+
+  
+
+
+
+
+/* =============================
+footer section styling start here 
+=================================*/
+
+.footer-section{
+    max-width: 100%;
+    height: 450px;
+    background-color: #04091E;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 100px 60px;
+    flex-wrap: wrap;
+}
+
+.footer-section .about-me{
+    width: 30%;
+    height: auto;
+    padding: 10px 20px;
+}
+.footer-section .about-me h2{
+    color: #FFFFFF;
+    padding-left: 10px;
+}
+.footer-section .about-me p{
+    padding: 20px 10px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-size: 15px;
+    font-weight: 100;
+}
+.footer-section .about-me a{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding-left: 10px;
+}
+
+.footer-section .newsletter{
+    width: 35%;
+    height: auto;
+    padding: 10px 20px;
+}
+.footer-section .newsletter h1{
+    color: #FFFFFF;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-left:10px ;
+}
+.footer-section .newsletter  p{
+    padding: 20px 10px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.footer-section .newsletter input{
+    outline: none;
+    border: none;
+    width: 260px;
+    height: 40px;
+    padding: 10px;
+    margin-left:10px ;
+
+   
+}
+.footer-section .newsletter button{
+    background-color: #8194FF;
+    outline: none;
+    border: none;
+    width: 60px;
+    height: 40px;
+    padding: 10px;
+    margin-left:10px ;
+  
+}
+.footer-section  .follow-me{
+    width: 25%;
+    height: auto;
+    padding: 10px 20px;
+}
+.footer-section  .follow-me p{
+  
+    color: #FFFFFF;
+    padding-left: 7px;
+    padding: 10px 8px;
+}
+.footer-section  .follow-me h2{
+    color: #FFFFFF;
+    padding-left: 6px;
+}
+.footer-section  .follow-me a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+
+/* =============================
+footer section styling end here 
+=================================*/
+
